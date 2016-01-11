@@ -4,7 +4,14 @@
 # locally. Currently it is tailored for Puppet Development
 # with a specific directory structure based off of a
 # Vagrant setup from the Vagrant repository in the ETPUPD
-# project.
+# project. You will need to create a secrets.py file for
+# this script to read your username and password information
+# from.
+#
+# Example file:
+#
+#  user = foo
+#  password = bar
 #
 # Future functionality might be changing your branches
 # to master and issuing a git pull/fetch/rebase.
