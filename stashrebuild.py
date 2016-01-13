@@ -3,9 +3,6 @@
 # the name of the script is a WIP.
 
 import stashy
-import os
-import shutil
-from subprocess import call
 from secrets import *
 
 stash = stashy.connect("https://repo.advisory.com", user, password)
@@ -15,6 +12,6 @@ PROJECT = 'ETPUPD'
 REPO = 'foo'
 BRANCH = 'devel'
 
-branch_delete = stash.projects[PROJECT].repos[REPO].branches()
+branch_delete = stash.projects[PROJECT].repos[REPO].branches(BRANCH)
 
-print branch_delete
+stash.delete(branch_delete)
