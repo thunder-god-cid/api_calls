@@ -14,4 +14,5 @@ BRANCH = 'devel'
 
 branch_delete = stash.projects[PROJECT].repos[REPO].branches(BRANCH)
 
+# this currently is not correct but is a placeholder for reference
 stash.delete(branch_delete)
